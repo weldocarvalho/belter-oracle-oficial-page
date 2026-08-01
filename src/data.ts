@@ -11,6 +11,7 @@ export type Product = {
   slug: string;
   name: string;
   url: string;
+  internal?: boolean;
   status: "disponivel" | "em-breve";
   statusLabel: string;
   tagline: string;
@@ -22,7 +23,8 @@ export const PRODUCTS: Product[] = [
   {
     slug: "zion-skincare",
     name: "Zion Skincare",
-    url: "https://zionskincare.belter-oracle.com.br",
+    url: "/zion-skincare",
+    internal: true,
     status: "disponivel",
     statusLabel: "Disponível",
     tagline: "Sua rotina de skincare personalizada por IA",

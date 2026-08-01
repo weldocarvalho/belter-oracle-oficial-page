@@ -30,6 +30,12 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-border: var(--border);
+  --color-sage-deep: var(--sage-deep);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-ring: var(--ring);
 
   --shadow-soft: 0 1px 2px 0 oklch(0.25 0.03 25 / 0.05), 0 8px 24px -8px oklch(0.25 0.03 25 / 0.1);
   --shadow-card:
@@ -71,6 +77,13 @@
   --clay: #6b5d52;
   --silver: #d9cfc6;
 
+  --sage-deep: #6b5d52;
+  --warning: #a8823d;
+  --warning-foreground: #5c4318;
+  --destructive: #a6473e;
+  --destructive-foreground: #fafafa;
+  --ring: var(--primary);
+
   --muted: color-mix(in oklab, var(--silver) 16%, var(--background));
   --muted-foreground: color-mix(in oklab, var(--foreground) 55%, var(--background));
   --accent: color-mix(in oklab, var(--primary) 7%, var(--background));
@@ -89,3 +102,135 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
+/*
+ * Zion Skincare — design system escopado.
+ * A página /zion-skincare envolve todo o conteúdo em um elemento com a
+ * classe .zion-theme. Os tokens abaixo sobrescrevem os valores globais da
+ * Belter apenas dentro desse subárvore (variáveis CSS herdam por escopo),
+ * então a home oficial não é afetada.
+ *
+ * Paleta: branco, grafite e aço azulado (steel blue).
+ *   #EFF2F7  background · #E9EDF4 cream · #1C2733 foreground
+ *   #3B5274  primary (aço azulado) · #2B3B52 sage-deep
+ *   #7D8AA0  clay · #161D29 charcoal · #C3CCD8 silver
+ */
+.zion-theme {
+  --font-sans: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  --font-display: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --radius: 1rem;
+
+  --background: #eff2f7;
+  --cream: #e9edf4;
+  --foreground: #1c2733;
+  --card: #ffffff;
+  --card-foreground: #1c2733;
+  --popover: #ffffff;
+  --popover-foreground: #1c2733;
+  --primary: #3b5274;
+  --primary-foreground: #ffffff;
+  --primary-soft: #c9d4e4;
+  --sage-deep: #2b3b52;
+  --clay: #7d8aa0;
+  --charcoal: #161d29;
+  --charcoal-foreground: #eef2f7;
+  --silver: #c3ccd8;
+
+  --secondary: color-mix(in oklab, var(--silver) 14%, var(--background));
+  --secondary-foreground: var(--foreground);
+  --muted: color-mix(in oklab, var(--silver) 14%, var(--background));
+  --muted-foreground: color-mix(in oklab, var(--foreground) 50%, var(--background));
+  --accent: color-mix(in oklab, var(--primary) 8%, var(--background));
+  --accent-foreground: var(--foreground);
+  --destructive: #a6473e;
+  --destructive-foreground: #fafafa;
+  --warning: #a8823d;
+  --warning-foreground: #5c4318;
+  --border: color-mix(in oklab, var(--silver) 34%, var(--background));
+  --input: color-mix(in oklab, var(--silver) 34%, var(--background));
+  --ring: var(--primary);
+
+  --shadow-soft: 0 1px 2px 0 oklch(0.18 0 0 / 0.05), 0 8px 24px -8px oklch(0.18 0 0 / 0.1);
+  --shadow-card: 0 1px 3px 0 oklch(0.18 0 0 / 0.07), 0 16px 40px -16px oklch(0.18 0 0 / 0.16);
+  --shadow-bento:
+    0 1px 2px 0 oklch(0.18 0 0 / 0.04), 0 2px 4px 0 oklch(0.18 0 0 / 0.04),
+    0 12px 28px -8px oklch(0.18 0 0 / 0.1);
+  --shadow-glow: 0 20px 60px -20px color-mix(in oklab, var(--primary) 35%, transparent);
+
+  font-family: var(--font-sans);
+  color: var(--foreground);
+  background-color: var(--background);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.zion-theme h1,
+.zion-theme h2,
+.zion-theme h3,
+.zion-theme h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Bento grid (design system Zion) ---------- */
+@utility bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@utility bento-card {
+  border: 1px solid var(--color-border);
+  background-color: var(--color-card);
+  border-radius: var(--radius-xl);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-bento);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+@utility bento-col-1 {
+  grid-column: span 1 / span 1;
+}
+@utility bento-col-2 {
+  grid-column: span 2 / span 2;
+}
+@utility bento-col-3 {
+  grid-column: span 3 / span 3;
+}
+@utility bento-col-4 {
+  grid-column: span 4 / span 4;
+}
+@utility bento-col-5 {
+  grid-column: span 5 / span 5;
+}
+@utility bento-col-6 {
+  grid-column: span 6 / span 6;
+}
+@utility bento-col-7 {
+  grid-column: span 7 / span 7;
+}
+@utility bento-col-8 {
+  grid-column: span 8 / span 8;
+}
+@utility bento-col-9 {
+  grid-column: span 9 / span 9;
+}
+@utility bento-col-10 {
+  grid-column: span 10 / span 10;
+}
+@utility bento-col-11 {
+  grid-column: span 11 / span 11;
+}
+@utility bento-col-12 {
+  grid-column: span 12 / span 12;
+}
+
+

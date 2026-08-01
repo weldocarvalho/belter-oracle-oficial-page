@@ -1,4 +1,5 @@
 import { Hexagon } from "lucide-react";
+import { Link } from "react-router-dom";
 import { PRODUCTS, SITE } from "../data";
 
 export function Footer() {
@@ -29,14 +30,20 @@ export function Footer() {
             {PRODUCTS.map((p) => (
               <li key={p.slug}>
                 {p.status === "disponivel" ? (
-                  <a
-                    href={p.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition-colors hover:text-charcoal-foreground"
-                  >
-                    {p.name}
-                  </a>
+                  p.internal ? (
+                    <Link to={p.url} className="transition-colors hover:text-charcoal-foreground">
+                      {p.name}
+                    </Link>
+                  ) : (
+                    <a
+                      href={p.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="transition-colors hover:text-charcoal-foreground"
+                    >
+                      {p.name}
+                    </a>
+                  )
                 ) : (
                   <span className="cursor-default">{p.name}</span>
                 )}

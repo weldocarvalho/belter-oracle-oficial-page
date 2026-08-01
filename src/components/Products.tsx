@@ -1,4 +1,5 @@
 import { ArrowUpRight, Check } from "lucide-react";
+import { Link } from "react-router-dom";
 import { PRODUCTS, type Product } from "../data";
 
 const STATUS_STYLES: Record<Product["status"], string> = {
@@ -55,14 +56,23 @@ export function Products() {
 
               <div className="mt-6 border-t border-border/60 pt-5">
                 {p.status === "disponivel" ? (
-                  <a
-                    href={p.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition hover:gap-2.5"
-                  >
-                    Conhecer {p.name} <ArrowUpRight className="h-4 w-4" aria-hidden />
-                  </a>
+                  p.internal ? (
+                    <Link
+                      to={p.url}
+                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition hover:gap-2.5"
+                    >
+                      Conhecer {p.name} <ArrowUpRight className="h-4 w-4" aria-hidden />
+                    </Link>
+                  ) : (
+                    <a
+                      href={p.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition hover:gap-2.5"
+                    >
+                      Conhecer {p.name} <ArrowUpRight className="h-4 w-4" aria-hidden />
+                    </a>
+                  )
                 ) : (
                   <span className="text-sm font-medium text-muted-foreground">
                     Em breve você conhecerá
