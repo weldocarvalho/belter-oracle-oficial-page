@@ -20,7 +20,7 @@ export function Products() {
           </h2>
           <p className="mt-4 text-pretty text-lg text-muted-foreground">
             Cada produto é um SaaS independente, com identidade própria e a mesma obsessão por
-            simplicidade e resultado. Escolha o seu.
+            simplicidade e resultado.
           </p>
         </div>
 
