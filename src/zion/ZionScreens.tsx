@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Monitor, Smartphone, Tablet } from "lucide-react";
+import { Monitor, Smartphone } from "lucide-react";
 import type { Device, ScreenId } from "./screens/types";
 import { DeviceFrame } from "./screens/DeviceFrame";
 import { AppShell } from "./screens/AppChrome";
@@ -17,7 +17,6 @@ const SCREENS: { id: ScreenId; label: string }[] = [
 
 const DEVICES: { id: Device; label: string; icon: typeof Smartphone }[] = [
   { id: "mobile", label: "Celular", icon: Smartphone },
-  { id: "tablet", label: "Tablet", icon: Tablet },
   { id: "desktop", label: "Desktop", icon: Monitor },
 ];
 
@@ -42,10 +41,6 @@ export function ZionScreens() {
           <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             Um app que se adapta a cada tela.
           </h2>
-          <p className="mt-4 text-pretty text-lg text-muted-foreground">
-            Reconstrução fiel das principais telas, com o mesmo layout do produto — no celular, no
-            tablet e no desktop.
-          </p>
         </div>
 
         <div className="mt-10 flex flex-col items-center gap-6">

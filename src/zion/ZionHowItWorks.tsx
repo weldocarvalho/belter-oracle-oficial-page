@@ -14,7 +14,7 @@ export function ZionHowItWorks() {
             Em 4 passos, sua rotina está pronta.
           </h2>
           <p className="mt-4 text-pretty text-lg text-muted-foreground">
-            Da primeira resposta ao cartão de progresso, tudo pensado para gerar hábito.
+            Tudo pensado para gerar hábito.
           </p>
         </div>
 

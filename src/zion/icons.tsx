@@ -49,7 +49,7 @@ const ICONS: Record<string, LucideIcon> = {
   supabase: Database,
   nitro: Server,
   paddle: CreditCard,
-  vercel: Cloud,
+  gcp: Cloud,
   docker: Container,
   vitest: FlaskConical,
   quality: BadgeCheck,

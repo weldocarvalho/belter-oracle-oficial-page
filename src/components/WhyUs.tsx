@@ -4,7 +4,7 @@ const VALUES = [
   {
     icon: Brain,
     title: "Inteligência de verdade",
-    text: "Usamos IA onde ela agrega valor real — não como enfeite. Cada modelo é escolhido para melhorar a experiência do usuário de forma mensurável.",
+    text: "Usamos IA onde ela agrega valor real — não como enfeite. Cada modelo é escolhido para melhorar a experiência do usuário.",
   },
   {
     icon: Users,
@@ -14,12 +14,12 @@ const VALUES = [
   {
     icon: Rocket,
     title: "Evolução contínua",
-    text: "Lançamos rápido, medimos, ajustamos. Nossos produtos crescem com base em dados reais de uso, não em achismo.",
+    text: "Lançamos, medimos, ajustamos.",
   },
   {
     icon: Gem,
     title: "Qualidade técnica",
-    text: "Arquiteturas modernas, código limpo e infraestrutura escalável. Construímos software que aguenta o crescimento.",
+    text: "Arquiteturas modernas, código limpo e infraestrutura escalável.",
   },
 ];
 

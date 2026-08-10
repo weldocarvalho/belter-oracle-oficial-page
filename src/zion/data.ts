@@ -6,10 +6,10 @@ export const ZION = {
   description:
     "Um SaaS completo que transforma o que você conta sobre a sua pele em uma rotina simples, segura e que cabe no bolso — com IA em cada etapa.",
   developer: {
-    name: "Welde Carvalho",
+    name: "Weldo Carvalho",
     role: "Desenvolvedor de software · Belter Oracle Tech",
-    github: "https://github.com/",
-    linkedin: "https://www.linkedin.com/in/",
+    github: "https://github.com/weldocarvalho",
+    linkedin: "https://www.linkedin.com/in/weldocarvalho/",
   },
 } as const;
 
@@ -118,7 +118,11 @@ export const STACK = [
   {
     group: "Qualidade e infraestrutura",
     items: [
-      { icon: "vercel", name: "Vercel", note: "Deploy com cron e edge functions" },
+      {
+        icon: "gcp",
+        name: "Google Cloud Platform",
+        note: "Deploy em Cloud Run, com build e serviços gerenciados",
+      },
       { icon: "docker", name: "Docker", note: "Imagens reproduzíveis de build" },
       { icon: "vitest", name: "Vitest", note: "Testes unitários no motor de IA" },
       { icon: "quality", name: "ESLint + Prettier", note: "Lint, formatação e typecheck" },

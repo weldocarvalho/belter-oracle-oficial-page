@@ -1,10 +1,8 @@
 import { useEffect } from "react";
 import { ZionHeader } from "./ZionHeader";
 import { ZionHero } from "./ZionHero";
-import { ZionProblem } from "./ZionProblem";
 import { ZionHowItWorks } from "./ZionHowItWorks";
 import { ZionScreens } from "./ZionScreens";
-import { ZionFeatures } from "./ZionFeatures";
 import { ZionStack } from "./ZionStack";
 import { ZionEngineering } from "./ZionEngineering";
 import { ZionCta } from "./ZionCta";
@@ -20,11 +18,9 @@ export function ZionSkincarePage() {
       <ZionHeader />
       <main>
         <ZionHero />
-        <ZionProblem />
+        <ZionStack />
         <ZionHowItWorks />
         <ZionScreens />
-        <ZionFeatures />
-        <ZionStack />
         <ZionEngineering />
         <ZionCta />
       </main>

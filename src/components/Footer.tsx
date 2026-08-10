@@ -77,7 +77,7 @@ export function Footer() {
       <div className="border-t border-charcoal-foreground/15">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-5 py-5 text-xs text-charcoal-foreground/45 sm:flex-row sm:px-8">
           <p>© {year} Belter Oracle Tech. Todos os direitos reservados.</p>
-          <p>Feito com inteligência, no Brasil.</p>
+          <p>Feito com inteligência.</p>
         </div>
       </div>
     </footer>

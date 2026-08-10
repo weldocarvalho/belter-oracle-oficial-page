@@ -38,7 +38,7 @@ function TabletFrame({ children }: { children: ReactNode }) {
 
 function DesktopFrame({ children }: { children: ReactNode }) {
   return (
-    <div className="mx-auto w-full max-w-[440px]">
+    <div className="mx-auto w-full max-w-[560px]">
       <div className="overflow-hidden rounded-2xl border border-[var(--silver)]/50 bg-card shadow-[var(--shadow-card)]">
         <div className="flex items-center gap-2 border-b border-[var(--silver)]/40 bg-[var(--cream)] px-4 py-2.5">
           <span className="h-3 w-3 rounded-full bg-[#ff5f57]" />

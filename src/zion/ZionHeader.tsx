@@ -1,12 +1,11 @@
-import { ArrowLeft, ArrowUpRight, Droplets } from "lucide-react";
+import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ZION } from "./data";
 
 const NAV = [
+  { href: "#tecnologias", label: "Tecnologias" },
   { href: "#como-funciona", label: "Como funciona" },
   { href: "#telas", label: "Telas" },
-  { href: "#recursos", label: "Recursos" },
-  { href: "#tecnologias", label: "Tecnologias" },
   { href: "#engenharia", label: "Engenharia" },
 ];
 
@@ -15,8 +14,8 @@ export function ZionHeader() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5 sm:px-8">
         <Link to="/" className="flex items-center gap-2.5">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-primary/50 bg-primary/10 text-primary">
-            <Droplets className="h-4 w-4" aria-hidden />
+          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-primary/50 bg-primary/10 font-display text-base font-bold text-primary">
+            Z
           </span>
           <span className="hidden font-display text-base font-semibold tracking-tight text-foreground sm:inline">
             Zion <span className="text-primary">Skincare</span>

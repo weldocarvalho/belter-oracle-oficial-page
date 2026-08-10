@@ -29,11 +29,11 @@ export const PRODUCTS: Product[] = [
     statusLabel: "Disponível",
     tagline: "Sua rotina de skincare personalizada por IA",
     description:
-      "Descubra em minutos a rotina de cuidados ideal para a sua pele, com recomendações simples, honestas e que cabem no seu bolso.",
+      "Descubra em minutos a rotina de cuidados ideal para a sua pele, com recomendações simples.",
     highlights: [
       "Rotina personalizada por IA",
       "Análise do seu tipo de pele",
-      "Recomendações acessíveis",
+      "Recomendações seguras",
     ],
   },
   {

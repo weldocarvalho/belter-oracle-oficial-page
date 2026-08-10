@@ -1,4 +1,4 @@
-import { ArrowRight, Clock, Cpu, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, Clock, Cpu, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { DeviceFrame } from "./screens/DeviceFrame";
 import { AppShell } from "./screens/AppChrome";
@@ -18,7 +18,7 @@ export function ZionHero() {
       <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 md:grid-cols-[1.05fr_0.95fr] md:items-center md:py-24">
         <div>
           <span className="inline-flex items-center gap-2 border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-primary">
-            <Sparkles className="h-3.5 w-3.5" aria-hidden /> Produto · Belter Oracle Tech
+            Produto Belter Oracle Tech
           </span>
           <h1 className="mt-6 text-balance font-display text-4xl font-semibold leading-[1.08] tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Sua rotina de skincare, personalizada por{" "}

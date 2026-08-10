@@ -10,11 +10,8 @@ export function ZionStack() {
             Tecnologias
           </span>
           <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Um stack moderno e escalável.
+            Uma stack moderna e escalável.
           </h2>
-          <p className="mt-4 text-pretty text-lg text-muted-foreground">
-            Ferramentas de mercado, escolhidas pelo que entregam — não por moda.
-          </p>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
