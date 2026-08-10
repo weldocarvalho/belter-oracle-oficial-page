@@ -6,20 +6,12 @@ export function GoakCta() {
   return (
     <section className="scroll-mt-16">
       <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
-        <div className="relative overflow-hidden rounded-3xl bg-[#18181B] px-8 py-14 text-center text-[#F8F8F8] sm:px-12 sm:py-16">
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0"
-            style={{
-              background:
-                "radial-gradient(600px 300px at 50% -20%, color-mix(in oklab, #E16349 45%, transparent), transparent 70%)",
-            }}
-          />
+        <div className="relative overflow-hidden rounded-3xl border border-[#E4E4E7] bg-[#F3F3F3] px-8 py-14 text-center text-[#1A1A1A] sm:px-12 sm:py-16">
           <div className="relative">
             <h2 className="font-display text-balance text-3xl font-bold tracking-tight sm:text-4xl">
               Quer ver o Gòak Tech funcionando?
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-pretty text-lg text-[#F8F8F8]/70">
+            <p className="mx-auto mt-4 max-w-xl text-pretty text-lg text-[#1A1A1A]/70">
               Acesse o aplicativo real, veja o painel de métricas e explore o produto em ação.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -33,7 +25,7 @@ export function GoakCta() {
               </a>
               <Link
                 to="/"
-                className="inline-flex items-center gap-2 border border-[#F8F8F8]/30 bg-transparent px-8 py-4 text-sm font-semibold uppercase tracking-[0.08em] text-[#F8F8F8] transition hover:border-[#F8F8F8]/70"
+                className="inline-flex items-center gap-2 border border-[#1A1A1A]/20 bg-transparent px-8 py-4 text-sm font-semibold uppercase tracking-[0.08em] text-[#1A1A1A] transition hover:border-[#1A1A1A]/40"
               >
                 Ver todos os produtos <ArrowRight className="h-4 w-4" aria-hidden />
               </Link>
