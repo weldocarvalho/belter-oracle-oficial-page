@@ -177,6 +177,78 @@ body {
   letter-spacing: -0.01em;
 }
 
+/*
+ * Gòak Tech — design system escopado.
+ * A página /goak-tech envolve todo o conteúdo em um elemento com a classe
+ * .goak-theme. Paleta e tipografia extraídas do produto real
+ * (goak-tech-gestor-inteligente): terracota, carbono e cinza-zinco, fonte
+ * de sistema (Segoe UI/-apple-system).
+ *   #F8F8F8  background · #F3F3F3 cream/surface suave · #1A1A1A foreground
+ *   #E16349  primary (terracota) · #CF553D primary hover
+ *   #71717A  clay (cinza-zinco) · #18181B charcoal · #E4E4E7 silver (bordas)
+ */
+.goak-theme {
+  --font-sans: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --radius: 1rem;
+
+  --background: #f8f8f8;
+  --cream: #f3f3f3;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --primary: #e16349;
+  --primary-foreground: #ffffff;
+  --primary-soft: #fbe3dc;
+  --sage-deep: #1a1a1a;
+  --clay: #71717a;
+  --charcoal: #18181b;
+  --charcoal-foreground: #f8f8f8;
+  --silver: #e4e4e7;
+
+  --secondary: color-mix(in oklab, var(--silver) 14%, var(--background));
+  --secondary-foreground: var(--foreground);
+  --muted: color-mix(in oklab, var(--silver) 14%, var(--background));
+  --muted-foreground: color-mix(in oklab, var(--foreground) 45%, var(--background));
+  --accent: color-mix(in oklab, var(--primary) 8%, var(--background));
+  --accent-foreground: var(--foreground);
+  --destructive: #dc2626;
+  --destructive-foreground: #fafafa;
+  --warning: #b45309;
+  --warning-foreground: #451a03;
+  --border: color-mix(in oklab, var(--silver) 60%, var(--background));
+  --input: color-mix(in oklab, var(--silver) 60%, var(--background));
+  --ring: var(--primary);
+
+  --shadow-soft: 0 1px 2px 0 oklch(0.18 0 0 / 0.05), 0 8px 24px -8px oklch(0.18 0 0 / 0.1);
+  --shadow-card: 0 1px 3px 0 oklch(0.18 0 0 / 0.07), 0 16px 40px -16px oklch(0.18 0 0 / 0.16);
+  --shadow-bento:
+    0 1px 2px 0 oklch(0.18 0 0 / 0.04), 0 2px 4px 0 oklch(0.18 0 0 / 0.04),
+    0 12px 28px -8px oklch(0.18 0 0 / 0.1);
+  --shadow-glow: 0 20px 60px -20px color-mix(in oklab, var(--primary) 35%, transparent);
+
+  font-family: var(--font-sans);
+  color: var(--foreground);
+  background-color: var(--background);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.goak-theme h1,
+.goak-theme h2,
+.goak-theme h3,
+.goak-theme h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
 /* ---------- Bento grid (design system Zion) ---------- */
 @utility bento-grid {
   display: grid;

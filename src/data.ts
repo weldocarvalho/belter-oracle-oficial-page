@@ -39,13 +39,18 @@ export const PRODUCTS: Product[] = [
   {
     slug: "goak-tech",
     name: "Gòak Tech",
-    url: "https://goak-tech.belter-oracle.com.br",
+    url: "/goak-tech",
+    internal: true,
     status: "disponivel",
     statusLabel: "Disponível",
-    tagline: "Tecnologia que conecta você ao que importa",
+    tagline: "Vendas e gestão inteligente para delivery e restaurantes",
     description:
-      "Uma solução inteligente para conectar pessoas e informações de forma simples e eficiente, com a qualidade técnica que você espera.",
-    highlights: ["Plataforma inteligente", "Experiência fluida", "Feito para escalar"],
+      "Cardápio digital, checkout próprio com Pix e cartão, e um painel que mostra o lucro real de cada prato — do anúncio à entrega.",
+    highlights: [
+      "Checkout Pix e cartão próprio",
+      "Funil com CMV e lucro real",
+      "Cozinha e entrega em tempo real",
+    ],
   },
   {
     slug: "desviciar",
