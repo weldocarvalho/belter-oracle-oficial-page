@@ -70,6 +70,14 @@ export function Footer() {
                 {SITE.url.replace("https://", "")}
               </a>
             </li>
+            <li>
+              <Link
+                to={SITE.privacyPath}
+                className="transition-colors hover:text-charcoal-foreground"
+              >
+                Política de Privacidade
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

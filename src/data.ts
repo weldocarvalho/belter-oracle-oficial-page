@@ -5,6 +5,9 @@ export const SITE = {
     "Somos uma empresa de tecnologia construindo SaaS inteligentes que resolvem problemas reais.",
   url: "https://belter-oracle.com.br",
   email: "contato@belter-oracle.com.br",
+  privacyPath: "/politica-de-privacidade",
+  /** Preencha com o CNPJ da empresa para que ele apareça na Política de Privacidade. */
+  cnpj: "" as string,
 } as const;
 
 export type Product = {

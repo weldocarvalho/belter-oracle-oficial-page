@@ -1,6 +1,7 @@
 import { Github, Hexagon, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ZION } from "./data";
+import { SITE } from "../data";
 
 export function ZionFooter() {
   const year = new Date().getFullYear();
@@ -46,6 +47,9 @@ export function ZionFooter() {
             <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-charcoal-foreground/45">
               <Link to="/" className="transition hover:text-charcoal-foreground">
                 Voltar ao site
+              </Link>
+              <Link to={SITE.privacyPath} className="transition hover:text-charcoal-foreground">
+                Política de Privacidade
               </Link>
               <a
                 href={ZION.appUrl}
